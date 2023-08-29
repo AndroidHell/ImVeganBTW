@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ちなみに私はビーガンです</string>
+    <string name="vegan_localized">私はビーガン食を食べます</string>
+    <string name="vegetarian_localized">私は菜食主義の食事を食べます</string>
+    <string name="no_dairy_localized">乳製品は一切食べない</string>
+    <string name="yes_dairy_localized">乳製品が食べられる</string>
+    <string name="no_eggs_localized">私は卵を食べません</string>
+    <string name="yes_eggs_localized">卵が食べられる</string>
+    <string name="no_meat_localized">赤身の肉や鶏肉は食べません</string>
+    <string name="yes_meat_localized">赤身の肉や鶏肉が食べられる</string>
+    <string name="no_fish_localized">私は魚やシーフードを食べません</string>
+    <string name="yes_fish_localized">魚介類が食べられる</string>
+    <string name="no_gluten_localized">小麦グルテンが食べられない</string>
+    <string name="yes_gluten_localized">小麦グルテンが食べられる</string>
+    <string name="vegan_button">ビーガン</string>
+    <string name="dairy_button">酪農</string>
+    <string name="eggs_button">卵</string>
+    <string name="meat_button">肉</string>
+    <string name="fish_button">魚</string>
+    <string name="gluten_button">グルテン</string>
+</resources>

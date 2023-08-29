@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">저는 비건 BTW입니다</string>
+    <string name="vegan_localized">나는 비건 채식을 먹는다</string>
+    <string name="vegetarian_localized">나는 채식을 먹는다</string>
+    <string name="no_dairy_localized">나는 유제품을 먹지 않는다</string>
+    <string name="yes_dairy_localized">유제품을 먹을 수 있습니다</string>
+    <string name="no_eggs_localized">나는 달걀을 먹지 않는다</string>
+    <string name="yes_eggs_localized">계란을 먹을 수 있어요</string>
+    <string name="no_meat_localized">나는 붉은 고기나 가금류를 먹지 않는다</string>
+    <string name="yes_meat_localized">붉은 고기와 가금류를 먹을 수 있습니다</string>
+    <string name="no_fish_localized">나는 생선이나 해산물을 먹지 않는다.</string>
+    <string name="yes_fish_localized">생선과 해산물을 먹을 수 있습니다</string>
+    <string name="no_gluten_localized">나는 밀 글루텐을 먹을 수 없다.</string>
+    <string name="yes_gluten_localized">밀 글루텐을 먹을 수 있다</string>
+    <string name="vegan_button">채식주의</string>
+    <string name="dairy_button">유제품</string>
+    <string name="eggs_button">파운드 케이크</string>
+    <string name="meat_button">고기</string>
+    <string name="fish_button">물고기</string>
+    <string name="gluten_button">글루텐</string>
+</resources>

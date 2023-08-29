@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">顺便说一下，我是素食主义者</string>
+    <string name="vegan_localized">我吃纯素饮食</string>
+    <string name="vegetarian_localized">我吃素食</string>
+    <string name="no_dairy_localized">我不吃任何乳制品</string>
+    <string name="yes_dairy_localized">我可以吃乳制品</string>
+    <string name="no_eggs_localized">我不吃鸡蛋</string>
+    <string name="yes_eggs_localized">我可以吃鸡蛋</string>
+    <string name="no_meat_localized">我不吃红肉或家禽</string>
+    <string name="yes_meat_localized">我可以吃红肉和家禽</string>
+    <string name="no_fish_localized">我不吃鱼或海鲜</string>
+    <string name="yes_fish_localized">我可以吃鱼和海鲜</string>
+    <string name="no_gluten_localized">我不能吃小麦面筋</string>
+    <string name="yes_gluten_localized">我可以吃小麦面筋</string>
+    <string name="vegan_button">純素主義者</string>
+    <string name="dairy_button">乳品</string>
+    <string name="eggs_button">蛋</string>
+    <string name="meat_button">肉</string>
+    <string name="fish_button">鱼</string>
+    <string name="gluten_button">麸质</string>
+</resources>

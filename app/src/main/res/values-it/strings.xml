@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A proposito, sono vegano.</string>
+    <string name="vegan_localized">Mangio una dieta vegana.</string>
+    <string name="vegetarian_localized">Mangio una dieta vegetariana.</string>
+    <string name="no_dairy_localized">Non mangio latticini.</string>
+    <string name="yes_dairy_localized">Posso mangiare latticini.</string>
+    <string name="no_eggs_localized">Non mangio uova.</string>
+    <string name="yes_eggs_localized">Posso mangiare le uova</string>
+    <string name="no_meat_localized">Non mangio carne rossa o pollame.</string>
+    <string name="yes_meat_localized">Posso mangiare carne rossa e pollame.</string>
+    <string name="no_fish_localized">Non mangio pesce o frutti di mare.</string>
+    <string name="yes_fish_localized">Posso mangiare pesce e frutti di mare.</string>
+    <string name="no_gluten_localized">Non posso mangiare glutine di frumento.</string>
+    <string name="yes_gluten_localized">Posso mangiare glutine di frumento.</string>
+    <string name="vegan_button">Vegano</string>
+    <string name="dairy_button">Caseificio</string>
+    <string name="eggs_button">Uova</string>
+    <string name="meat_button">Carne</string>
+    <string name="fish_button">Pesce</string>
+    <string name="gluten_button">Glutine</string>
+</resources>
