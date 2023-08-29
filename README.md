@@ -7,6 +7,7 @@ Veganism was in mind but this app can be used for vegetarians and also has a phr
 This is a rough proof of concept.
 
 Things that don't work correctly:
+
 - The Title translates to the phone's locale instead of the in-app selected language
 - The text overflows if it is too long
 -- will make it scroll
