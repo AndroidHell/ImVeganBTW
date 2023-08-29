@@ -10,6 +10,6 @@ Things that don't work correctly:
 
 - The Title translates to the phone's locale instead of the in-app selected language
 - The text overflows if it is too long
--- will make it scroll
--- or use smaller phrases like "no meat" and "no dairy"
+  - will make it scroll
+  - or use smaller phrases like "no meat" and "no dairy"
 - the Language tab does not unhighlight when Save it clicked and the app goes back to home
