@@ -37,7 +37,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.imveganbtw.R
 import com.example.imveganbtw.ui.theme.AppTheme
 
-
+//integration test
 @SuppressLint("StateFlowValueCalledInComposition")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
