@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">我可以吃乳制品</string>
     <string name="no_eggs_localized">我不吃鸡蛋</string>
     <string name="yes_eggs_localized">我可以吃鸡蛋</string>
-    <string name="no_meat_localized">我不吃红肉或家禽</string>
-    <string name="yes_meat_localized">我可以吃红肉和家禽</string>
-    <string name="no_fish_localized">我不吃鱼或海鲜</string>
-    <string name="yes_fish_localized">我可以吃鱼和海鲜</string>
+    <string name="no_meat_localized">我不吃肉或家禽</string>
+    <string name="yes_meat_localized">我可以吃肉和家禽</string>
+    <string name="no_fish_localized">我不吃鱼</string>
+    <string name="yes_fish_localized">我可以吃鱼</string>
     <string name="no_gluten_localized">我不能吃小麦面筋</string>
     <string name="yes_gluten_localized">我可以吃小麦面筋</string>
     <string name="vegan_button">純素主義者</string>

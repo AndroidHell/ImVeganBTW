@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">Je peux manger des produits laitiers.</string>
     <string name="no_eggs_localized">Je ne mange pas d\'œufs.</string>
     <string name="yes_eggs_localized">Je peux manger des œufs</string>
-    <string name="no_meat_localized">Je ne mange pas de viande rouge ou de volaille.</string>
-    <string name="yes_meat_localized">Je peux manger de la viande rouge et de la volaille.</string>
-    <string name="no_fish_localized">Je ne mange pas de poisson ou de fruits de mer.</string>
-    <string name="yes_fish_localized">Je peux manger du poisson et des fruits de mer.</string>
+    <string name="no_meat_localized">Je ne mange ni viande ni volaille.</string>
+    <string name="yes_meat_localized">Je peux manger de la viande et de la volaille.</string>
+    <string name="no_fish_localized">Je ne mange pas de poisson.</string>
+    <string name="yes_fish_localized">Je peux manger du poisson.</string>
     <string name="no_gluten_localized">Je ne peux pas manger de gluten de blé.</string>
     <string name="yes_gluten_localized">Je peux manger du gluten de blé.</string>
     <string name="vegan_button">Végétalien</string>

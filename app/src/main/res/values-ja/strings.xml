@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">乳製品が食べられる</string>
     <string name="no_eggs_localized">私は卵を食べません</string>
     <string name="yes_eggs_localized">卵が食べられる</string>
-    <string name="no_meat_localized">赤身の肉や鶏肉は食べません</string>
-    <string name="yes_meat_localized">赤身の肉や鶏肉が食べられる</string>
-    <string name="no_fish_localized">私は魚やシーフードを食べません</string>
-    <string name="yes_fish_localized">魚介類が食べられる</string>
+    <string name="no_meat_localized">私は肉や鶏肉を食べません</string>
+    <string name="yes_meat_localized">肉や鶏肉が食べられる</string>
+    <string name="no_fish_localized">私は魚を食べません</string>
+    <string name="yes_fish_localized">魚が食べられる</string>
     <string name="no_gluten_localized">小麦グルテンが食べられない</string>
     <string name="yes_gluten_localized">小麦グルテンが食べられる</string>
     <string name="vegan_button">ビーガン</string>

@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">Puedo comer lácteos.</string>
     <string name="no_eggs_localized">No como huevos.</string>
     <string name="yes_eggs_localized">Puedo comer huevos.</string>
-    <string name="no_meat_localized">No como carne roja ni aves de corral.</string>
-    <string name="yes_meat_localized">Puedo comer carne roja y aves de corral.</string>
-    <string name="no_fish_localized">No como pescado ni mariscos.</string>
-    <string name="yes_fish_localized">Puedo comer pescado y mariscos.</string>
+    <string name="no_meat_localized">No como carne ni aves de corral.</string>
+    <string name="yes_meat_localized">Puedo comer carne y aves de corral.</string>
+    <string name="no_fish_localized">No como pescado.</string>
+    <string name="yes_fish_localized">Puedo comer pescado.</string>
     <string name="no_gluten_localized">No puedo comer gluten de trigo.</string>
     <string name="yes_gluten_localized">Puedo comer gluten de trigo.</string>
     <string name="vegan_button">Vegano</string>

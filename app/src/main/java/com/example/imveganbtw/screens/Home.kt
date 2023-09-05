@@ -104,13 +104,12 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(start = 8.dp, end = 8.dp)
+                    .padding(8.dp)
             ) {
-                println("CardItem - Selected Language: $selectedLanguage")
                 Text(
                     text = stringResource(id = getTitleResourceId(title, checked, selectedLanguage)),
                     fontWeight = FontWeight.Bold,
-                    style = MaterialTheme.typography.headlineSmall,
+                    style = MaterialTheme.typography.titleMedium,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
                 )

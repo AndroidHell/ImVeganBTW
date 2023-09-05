@@ -10,11 +10,11 @@
     <string name="no_eggs_localized">I do not eat eggs.</string>
     <string name="yes_eggs_localized">I can eat eggs.</string>
 
-    <string name="no_meat_localized">I do not eat red meat or poultry.</string>
-    <string name="yes_meat_localized">I can eat red meat and poultry.</string>
+    <string name="no_meat_localized">I do not eat meat or poultry.</string>
+    <string name="yes_meat_localized">I can eat meat and poultry.</string>
 
-    <string name="no_fish_localized">I do not eat fish or seafood.</string>
-    <string name="yes_fish_localized">I can eat fish and seafood.</string>
+    <string name="no_fish_localized">I do not eat fish.</string>
+    <string name="yes_fish_localized">I can eat fish.</string>
 
     <string name="no_gluten_localized">I can not eat wheat gluten.</string>
     <string name="yes_gluten_localized">I can eat wheat gluten.</string>
@@ -33,10 +33,10 @@
     <string name="yes_dairy_german">Ich kann Milchprodukte essen.</string>
     <string name="no_eggs_german">Ich esse keine Eier.</string>
     <string name="yes_eggs_german">Ich kann Eier essen</string>
-    <string name="no_meat_german">Ich esse kein rotes Fleisch oder Geflügel.</string>
-    <string name="yes_meat_german">Ich kann rotes Fleisch und Geflügel essen.</string>
-    <string name="no_fish_german">Ich esse keinen Fisch oder Meeresfrüchte.</string>
-    <string name="yes_fish_german">Ich kann Fisch und Meeresfrüchte essen.</string>
+    <string name="no_meat_german">Ich esse kein Fleisch oder Geflügel.</string>
+    <string name="yes_meat_german">Ich kann Fleisch und Geflügel essen.</string>
+    <string name="no_fish_german">Ich esse keinen Fisch.</string>
+    <string name="yes_fish_german">Ich kann Fisch essen.</string>
     <string name="no_gluten_german">Ich kann kein Weizengluten essen.</string>
     <string name="yes_gluten_german">Ich kann Weizengluten essen.</string>
 
@@ -47,10 +47,10 @@
     <string name="yes_dairy_spanish">Puedo comer lácteos.</string>
     <string name="no_eggs_spanish">No como huevos.</string>
     <string name="yes_eggs_spanish">Puedo comer huevos.</string>
-    <string name="no_meat_spanish">No como carne roja ni aves de corral.</string>
-    <string name="yes_meat_spanish">Puedo comer carne roja y aves de corral.</string>
-    <string name="no_fish_spanish">No como pescado ni mariscos.</string>
-    <string name="yes_fish_spanish">Puedo comer pescado y mariscos.</string>
+    <string name="no_meat_spanish">No como carne ni aves de corral.</string>
+    <string name="yes_meat_spanish">Puedo comer carne y aves de corral.</string>
+    <string name="no_fish_spanish">No como pescado.</string>
+    <string name="yes_fish_spanish">Puedo comer pescado.</string>
     <string name="no_gluten_spanish">No puedo comer gluten de trigo.</string>
     <string name="yes_gluten_spanish">Puedo comer gluten de trigo.</string>
 
@@ -61,10 +61,10 @@
     <string name="yes_dairy_french">Je peux manger des produits laitiers.</string>
     <string name="no_eggs_french">Je ne mange pas d\'œufs.</string>
     <string name="yes_eggs_french">Je peux manger des œufs</string>
-    <string name="no_meat_french">Je ne mange pas de viande rouge ou de volaille.</string>
-    <string name="yes_meat_french">Je peux manger de la viande rouge et de la volaille.</string>
-    <string name="no_fish_french">Je ne mange pas de poisson ou de fruits de mer.</string>
-    <string name="yes_fish_french">Je peux manger du poisson et des fruits de mer.</string>
+    <string name="no_meat_french">Je ne mange ni viande ni volaille.</string>
+    <string name="yes_meat_french">Je peux manger de la viande et de la volaille.</string>
+    <string name="no_fish_french">Je ne mange pas de poisson.</string>
+    <string name="yes_fish_french">Je peux manger du poisson.</string>
     <string name="no_gluten_french">Je ne peux pas manger de gluten de blé.</string>
     <string name="yes_gluten_french">Je peux manger du gluten de blé.</string>
 
@@ -75,10 +75,10 @@
     <string name="yes_dairy_italian">Posso mangiare latticini.</string>
     <string name="no_eggs_italian">Non mangio uova.</string>
     <string name="yes_eggs_italian">Posso mangiare le uova</string>
-    <string name="no_meat_italian">Non mangio carne rossa o pollame.</string>
-    <string name="yes_meat_italian">Posso mangiare carne rossa e pollame.</string>
-    <string name="no_fish_italian">Non mangio pesce o frutti di mare.</string>
-    <string name="yes_fish_italian">Posso mangiare pesce e frutti di mare.</string>
+    <string name="no_meat_italian">Non mangio carne o pollame.</string>
+    <string name="yes_meat_italian">Posso mangiare carne e pollame.</string>
+    <string name="no_fish_italian">Non mangio pesce.</string>
+    <string name="yes_fish_italian">Posso mangiare pesce.</string>
     <string name="no_gluten_italian">Non posso mangiare glutine di frumento.</string>
     <string name="yes_gluten_italian">Posso mangiare glutine di frumento.</string>
 
@@ -89,10 +89,10 @@
     <string name="yes_dairy_japanese">乳製品が食べられる</string>
     <string name="no_eggs_japanese">私は卵を食べません</string>
     <string name="yes_eggs_japanese">卵が食べられる</string>
-    <string name="no_meat_japanese">赤身の肉や鶏肉は食べません</string>
-    <string name="yes_meat_japanese">赤身の肉や鶏肉が食べられる</string>
-    <string name="no_fish_japanese">私は魚やシーフードを食べません</string>
-    <string name="yes_fish_japanese">魚介類が食べられる</string>
+    <string name="no_meat_japanese">私は肉や鶏肉を食べません</string>
+    <string name="yes_meat_japanese">肉や鶏肉が食べられる</string>
+    <string name="no_fish_japanese">私は魚を食べません</string>
+    <string name="yes_fish_japanese">魚が食べられる</string>
     <string name="no_gluten_japanese">小麦グルテンが食べられない</string>
     <string name="yes_gluten_japanese">小麦グルテンが食べられる</string>
 
@@ -103,10 +103,10 @@
     <string name="yes_dairy_korean">유제품을 먹을 수 있습니다</string>
     <string name="no_eggs_korean">나는 달걀을 먹지 않는다</string>
     <string name="yes_eggs_korean">계란을 먹을 수 있어요</string>
-    <string name="no_meat_korean">나는 붉은 고기나 가금류를 먹지 않는다</string>
-    <string name="yes_meat_korean">붉은 고기와 가금류를 먹을 수 있습니다</string>
-    <string name="no_fish_korean">나는 생선이나 해산물을 먹지 않는다.</string>
-    <string name="yes_fish_korean">생선과 해산물을 먹을 수 있습니다</string>
+    <string name="no_meat_korean">나는 고기나 가금류를 먹지 않는다</string>
+    <string name="yes_meat_korean">고기와 가금류를 먹을 수 있습니다</string>
+    <string name="no_fish_korean">나는 물고기를 먹지 않는다.</string>
+    <string name="yes_fish_korean">생선을 먹을 수 있다</string>
     <string name="no_gluten_korean">나는 밀 글루텐을 먹을 수 없다.</string>
     <string name="yes_gluten_korean">밀 글루텐을 먹을 수 있다</string>
 
@@ -117,10 +117,10 @@
     <string name="yes_dairy_thai">ฉันสามารถกินนม</string>
     <string name="no_eggs_thai">ฉันไม่กินไข่</string>
     <string name="yes_eggs_thai">ฉันกินไข่ได้</string>
-    <string name="no_meat_thai">ฉันไม่กินเนื้อแดงหรือสัตว์ปีก</string>
-    <string name="yes_meat_thai">ฉันสามารถกินเนื้อแดงและสัตว์ปีกได้</string>
-    <string name="no_fish_thai">ฉันไม่กินปลาหรืออาหารทะเล</string>
-    <string name="yes_fish_thai">ฉันสามารถกินปลาและอาหารทะเล</string>
+    <string name="no_meat_thai">ฉันไม่กินเนื้อสัตว์หรือสัตว์ปีก</string>
+    <string name="yes_meat_thai">ฉันสามารถกินเนื้อสัตว์และสัตว์ปีกได้</string>
+    <string name="no_fish_thai">ฉันไม่กินปลา</string>
+    <string name="yes_fish_thai">ฉันกินปลาได้</string>
     <string name="no_gluten_thai">ฉันไม่สามารถกินกลูเตนข้าวสาลีได้</string>
     <string name="yes_gluten_thai">ฉันสามารถกินกลูเตนข้าวสาลีได้</string>
 
@@ -131,11 +131,14 @@
     <string name="yes_dairy_chinese">我可以吃乳制品</string>
     <string name="no_eggs_chinese">我不吃鸡蛋</string>
     <string name="yes_eggs_chinese">我可以吃鸡蛋</string>
-    <string name="no_meat_chinese">我不吃红肉或家禽</string>
-    <string name="yes_meat_chinese">我可以吃红肉和家禽</string>
-    <string name="no_fish_chinese">我不吃鱼或海鲜</string>
-    <string name="yes_fish_chinese">我可以吃鱼和海鲜</string>
+    <string name="no_meat_chinese">我不吃肉或家禽</string>
+    <string name="yes_meat_chinese">我可以吃肉和家禽</string>
+    <string name="no_fish_chinese">我不吃鱼</string>
+    <string name="yes_fish_chinese">我可以吃鱼</string>
     <string name="no_gluten_chinese">我不能吃小麦面筋</string>
     <string name="yes_gluten_chinese">我可以吃小麦面筋</string>
 
 </resources>
+
+
+

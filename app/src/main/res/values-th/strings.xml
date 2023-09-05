@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">ฉันสามารถกินนม</string>
     <string name="no_eggs_localized">ฉันไม่กินไข่</string>
     <string name="yes_eggs_localized">ฉันกินไข่ได้</string>
-    <string name="no_meat_localized">ฉันไม่กินเนื้อแดงหรือสัตว์ปีก</string>
-    <string name="yes_meat_localized">ฉันสามารถกินเนื้อแดงและสัตว์ปีกได้</string>
-    <string name="no_fish_localized">ฉันไม่กินปลาหรืออาหารทะเล</string>
-    <string name="yes_fish_localized">ฉันสามารถกินปลาและอาหารทะเล</string>
+    <string name="no_meat_localized">ฉันไม่กินเนื้อสัตว์หรือสัตว์ปีก</string>
+    <string name="yes_meat_localized">ฉันสามารถกินเนื้อสัตว์และสัตว์ปีกได้</string>
+    <string name="no_fish_localized">ฉันไม่กินปลา</string>
+    <string name="yes_fish_localized">ฉันกินปลาได้</string>
     <string name="no_gluten_localized">ฉันไม่สามารถกินกลูเตนข้าวสาลีได้</string>
     <string name="yes_gluten_localized">ฉันสามารถกินกลูเตนข้าวสาลีได้</string>
     <string name="vegan_button">มังสวิรัติ</string>

@@ -25,12 +25,16 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavController
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.rememberNavController
+import com.example.imveganbtw.R
+import com.example.imveganbtw.Screens
 import com.example.imveganbtw.ui.theme.AppTheme
 import com.example.imveganbtw.ui.theme.md_theme_light_primary
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -60,22 +64,29 @@ fun LanguageScreen(navController: NavController, languageViewModel: LanguageView
             selectedOption = languageViewModel.selectedLanguageValue,
             onOptionSelected = { language ->
                 languageViewModel.setSelectedLanguage(language)
-                println(language)
             }
         )
 
         Spacer(modifier = Modifier.weight(1f))
 
         Button(
+
             onClick = {
-                navController.popBackStack()
+                // Navigate back to the Home screen
+                navController.navigate(Screens.Home.route) {
+                    // Pop the back stack to remove LanguageScreen from the stack
+                    popUpTo(navController.graph.findStartDestination().id) {
+                        saveState = true
+                    }
+                    // Ensure only one instance of the Home screen is in the back stack
+                    launchSingleTop = true
+                    restoreState = true
+                }
             },
             modifier = Modifier
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(4.dp))
                 .background(md_theme_light_primary)
-
-
         ) {
             Text(text = "Save")
         }
@@ -102,7 +113,7 @@ fun RadioGroup(
             ) {
                 RadioButton(
                     selected = (option == selectedOption),
-                    onClick = null // We handle clicks in the parent modifier
+                    onClick = null
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(text = option, style = MaterialTheme.typography.bodyMedium)
@@ -129,7 +140,7 @@ class LanguageViewModel : ViewModel() {
 @Preview
 fun LanguageScreenPreview() {
     val navController = rememberNavController()
-    val languageViewModel = LanguageViewModel() // Create an instance of LanguageViewModel
+    val languageViewModel = LanguageViewModel()
     AppTheme(darkTheme = false) {
         LanguageScreen(navController, languageViewModel)
     }

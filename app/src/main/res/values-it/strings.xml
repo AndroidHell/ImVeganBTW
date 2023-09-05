@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">Posso mangiare latticini.</string>
     <string name="no_eggs_localized">Non mangio uova.</string>
     <string name="yes_eggs_localized">Posso mangiare le uova</string>
-    <string name="no_meat_localized">Non mangio carne rossa o pollame.</string>
-    <string name="yes_meat_localized">Posso mangiare carne rossa e pollame.</string>
-    <string name="no_fish_localized">Non mangio pesce o frutti di mare.</string>
-    <string name="yes_fish_localized">Posso mangiare pesce e frutti di mare.</string>
+    <string name="no_meat_localized">Non mangio carne o pollame.</string>
+    <string name="yes_meat_localized">Posso mangiare carne e pollame.</string>
+    <string name="no_fish_localized">Non mangio pesce.</string>
+    <string name="yes_fish_localized">Posso mangiare pesce.</string>
     <string name="no_gluten_localized">Non posso mangiare glutine di frumento.</string>
     <string name="yes_gluten_localized">Posso mangiare glutine di frumento.</string>
     <string name="vegan_button">Vegano</string>

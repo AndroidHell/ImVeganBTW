@@ -7,10 +7,10 @@
     <string name="yes_dairy_localized">Ich kann Milchprodukte essen.</string>
     <string name="no_eggs_localized">Ich esse keine Eier.</string>
     <string name="yes_eggs_localized">Ich kann Eier essen</string>
-    <string name="no_meat_localized">Ich esse kein rotes Fleisch oder Geflügel.</string>
-    <string name="yes_meat_localized">Ich kann rotes Fleisch und Geflügel essen.</string>
-    <string name="no_fish_localized">Ich esse keinen Fisch oder Meeresfrüchte.</string>
-    <string name="yes_fish_localized">Ich kann Fisch und Meeresfrüchte essen.</string>
+    <string name="no_meat_localized">Ich esse kein Fleisch oder Geflügel.</string>
+    <string name="yes_meat_localized">Ich kann Fleisch und Geflügel essen.</string>
+    <string name="no_fish_localized">Ich esse keinen Fisch.</string>
+    <string name="yes_fish_localized">Ich kann Fisch essen.</string>
     <string name="no_gluten_localized">Ich kann kein Weizengluten essen.</string>
     <string name="yes_gluten_localized">Ich kann Weizengluten essen.</string>
     <string name="vegan_button">Vegan</string>
