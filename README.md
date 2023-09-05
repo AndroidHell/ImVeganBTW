@@ -15,6 +15,6 @@ Things that don't work correctly:
 - the Language tab does not unhighlight when Save it clicked and the app goes back to home
 
 
-#TODO:
+//TODO:
 - redo nave system since the Language nav button stays highlighted when saved
 - save state of languaegf selection for ease of use
