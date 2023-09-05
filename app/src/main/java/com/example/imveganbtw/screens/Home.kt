@@ -3,10 +3,13 @@ package com.example.imveganbtw.screens
 import android.annotation.SuppressLint
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -44,39 +47,42 @@ fun HomeScreen(navController: NavController, languageViewModel: LanguageViewMode
     val viewModel: CardsViewModel = viewModel()
     val selectedLanguage = remember { mutableStateOf("Spanish") }
 
-    Column(modifier = Modifier.fillMaxSize()) {
-        CardItem("Vegan", viewModel.isVeganText, languageViewModel.selectedLanguageValue) {
-            viewModel.isVeganText = !viewModel.isVeganText
-            if (viewModel.isVeganText) {
-                viewModel.isDairyText = true
-                viewModel.isEggsText = true
-                viewModel.isMeatText = true
-                viewModel.isFishText = true
-            } else {
-                viewModel.isDairyText = false
-                viewModel.isEggsText = false
-                viewModel.isMeatText = true
-                viewModel.isFishText = true
+    AppTheme{
+        Column(modifier = Modifier.fillMaxSize()) {
+            CardItem("Vegan", viewModel.isVeganText, languageViewModel.selectedLanguageValue) {
+                viewModel.isVeganText = !viewModel.isVeganText
+                if (viewModel.isVeganText) {
+                    viewModel.isDairyText = true
+                    viewModel.isEggsText = true
+                    viewModel.isMeatText = true
+                    viewModel.isFishText = true
+                } else {
+                    viewModel.isDairyText = false
+                    viewModel.isEggsText = false
+                    viewModel.isMeatText = true
+                    viewModel.isFishText = true
+                }
             }
+            CardItem("Dairy", viewModel.isDairyText, languageViewModel.selectedLanguageValue) {
+                viewModel.isDairyText = !viewModel.isDairyText
+            }
+            CardItem("Eggs", viewModel.isEggsText, languageViewModel.selectedLanguageValue) {
+                viewModel.isEggsText = !viewModel.isEggsText
+            }
+            CardItem("Meat", viewModel.isMeatText, languageViewModel.selectedLanguageValue) {
+                viewModel.isMeatText = !viewModel.isMeatText
+            }
+            CardItem("Fish", viewModel.isFishText, languageViewModel.selectedLanguageValue) {
+                viewModel.isFishText = !viewModel.isFishText
+            }
+            CardItem("Gluten", viewModel.isGlutenText, languageViewModel.selectedLanguageValue) {
+                viewModel.isGlutenText = !viewModel.isGlutenText
+            }
+            Spacer(modifier = Modifier.weight(1f))
+            RestrictButtonRow(viewModel)
         }
-        CardItem("Dairy", viewModel.isDairyText, languageViewModel.selectedLanguageValue) {
-            viewModel.isDairyText = !viewModel.isDairyText
-        }
-        CardItem("Eggs", viewModel.isEggsText, languageViewModel.selectedLanguageValue) {
-            viewModel.isEggsText = !viewModel.isEggsText
-        }
-        CardItem("Meat", viewModel.isMeatText, languageViewModel.selectedLanguageValue) {
-            viewModel.isMeatText = !viewModel.isMeatText
-        }
-        CardItem("Fish", viewModel.isFishText, languageViewModel.selectedLanguageValue) {
-            viewModel.isFishText = !viewModel.isFishText
-        }
-        CardItem("Gluten", viewModel.isGlutenText, languageViewModel.selectedLanguageValue) {
-            viewModel.isGlutenText = !viewModel.isGlutenText
-        }
-        Spacer(modifier = Modifier.weight(1f))
-        RestrictButtonRow(viewModel)
     }
+
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -87,6 +93,12 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
         .padding(horizontal = 8.dp)
         .height(60.dp)
 
+    val backgroundColor = if (isSystemInDarkTheme()) {
+        Color.DarkGray
+    } else {
+        Color.White
+    }
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -94,7 +106,7 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
     ) {
         Card(
             modifier = cardModifier,
-            colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+            colors = CardDefaults.elevatedCardColors(containerColor = backgroundColor),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
         ) {
             Column(
@@ -107,7 +119,8 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
                     fontWeight = FontWeight.Bold,
                     style = MaterialTheme.typography.titleMedium,
                     maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
+                    overflow = TextOverflow.Ellipsis,
+                    color = MaterialTheme.colorScheme.onSurface
                 )
 
                 Spacer(modifier = Modifier.height(2.dp))
@@ -116,7 +129,8 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
                     text = stringResource(id = getLocalizedResourceId(title, checked)),
                     style = MaterialTheme.typography.bodyMedium,
                     maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
+                    overflow = TextOverflow.Ellipsis,
+                    color = MaterialTheme.colorScheme.onSurface
                 )
 
             }
@@ -249,94 +263,123 @@ fun getLocalizedResourceId(title: String, checked: Boolean): Int {
 fun RestrictButtonRow(viewModel: CardsViewModel) {
     Column(
         modifier = Modifier
-            .fillMaxWidth()
+            .fillMaxSize()
             .padding(4.dp)
+            .background(Color.Blue)
     ) {
-        Row(
+        Box(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(4.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
+                .fillMaxSize()
+                .weight(1f)
+                .padding(4.dp)
+                .background(Color.Red)
         ) {
-            RestrictButton(
-                label = stringResource(id = R.string.vegan_button),
+            Row(
                 modifier = Modifier
-                    .background(md_theme_light_primary)
-                    .weight(1f)
-                    .padding(8.dp),
-                onClick = {
-                    viewModel.isVeganText = !viewModel.isVeganText
-                    if (viewModel.isVeganText) {
-                        viewModel.isDairyText = true
-                        viewModel.isEggsText = true
-                        viewModel.isMeatText = true
-                        viewModel.isFishText = true
-                    } else {
-                        viewModel.isDairyText = false
-                        viewModel.isEggsText = false
-                        viewModel.isMeatText = true
-                        viewModel.isFishText = true
-                    }
-                },
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            RestrictButton(
-                label = stringResource(id = R.string.dairy_button),
-                modifier = Modifier
-                    .background(md_theme_light_primary)
-                    .weight(1f)
-                    .padding(8.dp),
-                onClick = { viewModel.isDairyText = !viewModel.isDairyText },
-            )
+                    .fillMaxSize(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+            ) {
+                RestrictButton(
+                    label = stringResource(id = R.string.vegan_button),
+                    modifier = Modifier
+                        .background(md_theme_light_primary)
+                        .weight(1f)
+                        .padding(4.dp)
+                        .fillMaxHeight(),
+                    onClick = {
+                        viewModel.isVeganText = !viewModel.isVeganText
+                        if (viewModel.isVeganText) {
+                            viewModel.isDairyText = true
+                            viewModel.isEggsText = true
+                            viewModel.isMeatText = true
+                            viewModel.isFishText = true
+                        } else {
+                            viewModel.isDairyText = false
+                            viewModel.isEggsText = false
+                            viewModel.isMeatText = true
+                            viewModel.isFishText = true
+                        }
+                    },
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                RestrictButton(
+                    label = stringResource(id = R.string.dairy_button),
+                    modifier = Modifier
+                        .background(md_theme_light_primary)
+                        .weight(1f)
+                        .padding(4.dp)
+                        .fillMaxHeight(),
+                    onClick = { viewModel.isDairyText = !viewModel.isDairyText },
+                )
+            }
+        }
 
-        }
-        Row(
+        Box(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(4.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly,
+                .fillMaxSize()
+                .weight(1f)
+                .padding(4.dp)
+                .background(Color.Yellow)
         ) {
-            RestrictButton(
-                label = stringResource(id = R.string.eggs_button),
+            Row(
                 modifier = Modifier
-                    .background(md_theme_light_primary)
-                    .weight(1f)
-                    .padding(8.dp),
-                onClick = { viewModel.isEggsText = !viewModel.isEggsText },
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            RestrictButton(
-                label = stringResource(id = R.string.meat_button),
-                modifier = Modifier
-                    .background(md_theme_light_primary)
-                    .weight(1f)
-                    .padding(8.dp),
-                onClick = { viewModel.isMeatText = !viewModel.isMeatText },
-            )
+                    .fillMaxSize(),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+            ) {
+                RestrictButton(
+                    label = stringResource(id = R.string.eggs_button),
+                    modifier = Modifier
+                        .background(md_theme_light_primary)
+                        .weight(1f)
+                        .padding(4.dp)
+                        .fillMaxHeight(),
+                    onClick = { viewModel.isEggsText = !viewModel.isEggsText },
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                RestrictButton(
+                    label = stringResource(id = R.string.meat_button),
+                    modifier = Modifier
+                        .background(md_theme_light_primary)
+                        .weight(1f)
+                        .padding(4.dp)
+                        .fillMaxHeight(),
+                    onClick = { viewModel.isMeatText = !viewModel.isMeatText },
+                )
+            }
         }
-        Row(
+
+        Box(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(4.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly,
+                .fillMaxSize()
+                .weight(1f)
+                .padding(4.dp)
+                .background(Color.Green)
         ) {
-            RestrictButton(
-                label = stringResource(id = R.string.fish_button),
+            Row(
                 modifier = Modifier
-                    .background(md_theme_light_primary)
-                    .weight(1f)
-                    .padding(8.dp),
-                onClick = { viewModel.isFishText = !viewModel.isFishText },
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            RestrictButton(
-                label = stringResource(id = R.string.gluten_button),
-                modifier = Modifier
-                    .background(md_theme_light_primary)
-                    .weight(1f)
-                    .padding(8.dp),
-                onClick = { viewModel.isGlutenText = !viewModel.isGlutenText }
-            )
+                    .fillMaxSize(),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+            ) {
+                RestrictButton(
+                    label = stringResource(id = R.string.fish_button),
+                    modifier = Modifier
+                        .background(md_theme_light_primary)
+                        .weight(1f)
+                        .padding(4.dp)
+                        .fillMaxHeight(),
+                    onClick = { viewModel.isFishText = !viewModel.isFishText },
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                RestrictButton(
+                    label = stringResource(id = R.string.gluten_button),
+                    modifier = Modifier
+                        .background(md_theme_light_primary)
+                        .weight(1f)
+                        .padding(4.dp)
+                        .fillMaxHeight(),
+                    onClick = { viewModel.isGlutenText = !viewModel.isGlutenText }
+                )
+            }
         }
     }
 }

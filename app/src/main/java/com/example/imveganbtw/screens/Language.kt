@@ -1,6 +1,7 @@
 package com.example.imveganbtw.screens
 
 import android.annotation.SuppressLint
+import android.widget.RadioGroup
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -34,6 +35,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.rememberNavController
 import com.example.imveganbtw.R
+import com.example.imveganbtw.RestrictButton
 import com.example.imveganbtw.Screens
 import com.example.imveganbtw.ui.theme.AppTheme
 import com.example.imveganbtw.ui.theme.md_theme_light_primary
@@ -69,26 +71,31 @@ fun LanguageScreen(navController: NavController, languageViewModel: LanguageView
 
         Spacer(modifier = Modifier.weight(1f))
 
-        Button(
 
-            onClick = {
-                // Navigate back to the Home screen
-                navController.navigate(Screens.Home.route) {
-                    // Pop the back stack to remove LanguageScreen from the stack
-                    popUpTo(navController.graph.findStartDestination().id) {
-                        saveState = true
-                    }
-                    // Ensure only one instance of the Home screen is in the back stack
-                    launchSingleTop = true
-                    restoreState = true
-                }
-            },
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .clip(RoundedCornerShape(4.dp))
-                .background(md_theme_light_primary)
+                .padding(4.dp)
         ) {
-            Text(text = "Save")
+            RestrictButton(
+                label = stringResource(id = R.string.save_button),
+                modifier = Modifier
+                    .background(md_theme_light_primary)
+                    .weight(1f)
+                    .padding(8.dp),
+                onClick = {
+                    // Navigate back to the Home screen
+                    navController.navigate(Screens.Home.route) {
+                        // Pop the back stack to remove LanguageScreen from the stack
+                        popUpTo(navController.graph.findStartDestination().id) {
+                            saveState = true
+                        }
+                        // Ensure only one instance of the Home screen is in the back stack
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                },
+            )
         }
     }
 }
