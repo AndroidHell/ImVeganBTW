@@ -37,15 +37,12 @@ import androidx.navigation.compose.rememberNavController
 import com.example.imveganbtw.R
 import com.example.imveganbtw.ui.theme.AppTheme
 
-//integration test
 @SuppressLint("StateFlowValueCalledInComposition")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(navController: NavController, languageViewModel: LanguageViewModel) {
     val viewModel: CardsViewModel = viewModel()
     val selectedLanguage = remember { mutableStateOf("Spanish") }
-
-//    val selectedLanguage = "Spanish"
 
     Column(modifier = Modifier.fillMaxSize()) {
         CardItem("Vegan", viewModel.isVeganText, languageViewModel.selectedLanguageValue) {
@@ -94,7 +91,6 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
         modifier = Modifier
             .fillMaxWidth()
             .padding(4.dp)
-        // Add horizontalScroll here
     ) {
         Card(
             modifier = cardModifier,
