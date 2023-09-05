@@ -13,3 +13,8 @@ Things that don't work correctly:
   - will make it scroll
   - or use smaller phrases like "no meat" and "no dairy"
 - the Language tab does not unhighlight when Save it clicked and the app goes back to home
+
+
+#TODO:
+- redo nave system since the Language nav button stays highlighted when saved
+- save state of languaegf selection for ease of use
