@@ -48,7 +48,6 @@ import kotlinx.coroutines.launch
 @SuppressLint("StateFlowValueCalledInComposition")
 @Composable
 fun LanguageScreen(navController: NavController, languageViewModel: LanguageViewModel) {
-    var selectedLanguage by remember { mutableStateOf("English") }
 
     Column(
         modifier = Modifier
@@ -84,13 +83,10 @@ fun LanguageScreen(navController: NavController, languageViewModel: LanguageView
                     .weight(1f)
                     .padding(8.dp),
                 onClick = {
-                    // Navigate back to the Home screen
                     navController.navigate(Screens.Home.route) {
-                        // Pop the back stack to remove LanguageScreen from the stack
                         popUpTo(navController.graph.findStartDestination().id) {
                             saveState = true
                         }
-                        // Ensure only one instance of the Home screen is in the back stack
                         launchSingleTop = true
                         restoreState = true
                     }

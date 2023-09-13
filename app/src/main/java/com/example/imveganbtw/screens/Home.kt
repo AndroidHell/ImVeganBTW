@@ -41,11 +41,9 @@ import com.example.imveganbtw.R
 import com.example.imveganbtw.ui.theme.AppTheme
 
 @SuppressLint("StateFlowValueCalledInComposition")
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(navController: NavController, languageViewModel: LanguageViewModel) {
     val viewModel: CardsViewModel = viewModel()
-    val selectedLanguage = remember { mutableStateOf("Spanish") }
 
     AppTheme{
         Column(modifier = Modifier.fillMaxSize()) {
@@ -85,7 +83,6 @@ fun HomeScreen(navController: NavController, languageViewModel: LanguageViewMode
 
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language: () -> Unit) {
     val cardModifier = Modifier
@@ -98,7 +95,6 @@ fun CardItem(title: String, checked: Boolean, selectedLanguage: String, language
     } else {
         Color.White
     }
-
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -265,14 +261,12 @@ fun RestrictButtonRow(viewModel: CardsViewModel) {
         modifier = Modifier
             .fillMaxSize()
             .padding(4.dp)
-            .background(Color.Blue)
     ) {
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .weight(1f)
                 .padding(4.dp)
-                .background(Color.Red)
         ) {
             Row(
                 modifier = Modifier
@@ -319,7 +313,6 @@ fun RestrictButtonRow(viewModel: CardsViewModel) {
                 .fillMaxSize()
                 .weight(1f)
                 .padding(4.dp)
-                .background(Color.Yellow)
         ) {
             Row(
                 modifier = Modifier
@@ -353,7 +346,6 @@ fun RestrictButtonRow(viewModel: CardsViewModel) {
                 .fillMaxSize()
                 .weight(1f)
                 .padding(4.dp)
-                .background(Color.Green)
         ) {
             Row(
                 modifier = Modifier
@@ -388,7 +380,7 @@ fun RestrictButtonRow(viewModel: CardsViewModel) {
 @Preview
 fun HomeScreenPreview() {
     val navController = rememberNavController()
-    val languageViewModel = LanguageViewModel() // Create an instance of LanguageViewModel
+    val languageViewModel = LanguageViewModel()
     AppTheme(darkTheme = false) {
         LanguageScreen(navController, languageViewModel)
     }

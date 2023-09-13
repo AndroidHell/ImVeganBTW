@@ -31,10 +31,7 @@ import com.example.imveganbtw.screens.LanguageViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScaffold() {
-    var navigationSelectedItem by remember { mutableIntStateOf(0) } // Track the selected item
-
-    val viewModel: CardsViewModel = viewModel()
-    val selectedLanguage = remember { mutableStateOf("English") }
+    var selectedNavItem by remember { mutableIntStateOf(0) }
 
     val navController = rememberNavController()
     val languageViewModel = LanguageViewModel()
@@ -50,7 +47,7 @@ fun MainScaffold() {
             NavigationBar {
                 BottomNavigationItem().bottomNavigationItems().forEachIndexed { index, navigationItem ->
                     NavigationBarItem(
-                        selected = index == navigationSelectedItem, // Set selected based on the index
+                        selected = index == selectedNavItem,
                         label = {
                             Text(navigationItem.label)
                         },
@@ -61,7 +58,7 @@ fun MainScaffold() {
                             )
                         },
                         onClick = {
-                            navigationSelectedItem = index // Update the selected item index
+                            selectedNavItem = index
                             navController.navigate(navigationItem.route) {
                                 popUpTo(navController.graph.findStartDestination().id) {
                                     saveState = true
