@@ -18,6 +18,3 @@ Things that don't work correctly:
 //TODO:
 - redo nave system since the Language nav button stays highlighted when saved
 - save state of languaegf selection for ease of use
-
-
-check master for new changes

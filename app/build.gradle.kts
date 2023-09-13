@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.imveganbtw"
+    namespace = "com.androidhell.imveganbtw"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.imveganbtw"
+        applicationId = "com.androidhell.imveganbtw"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
