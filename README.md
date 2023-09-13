@@ -20,4 +20,4 @@ Things that don't work correctly:
 - save state of languaegf selection for ease of use
 
 
-chech master for new changes
+check master for new changes
