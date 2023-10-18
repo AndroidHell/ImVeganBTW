@@ -227,6 +227,17 @@ fun getTitleResourceId(title: String, checked: Boolean, selectedLanguage: String
                 else -> R.string.app_name // Placeholder
             }
         }
+        "Bangla" -> {
+            when (title) {
+                "Vegan" -> if (checked) R.string.vegan_bangla else R.string.vegetarian_bangla
+                "Dairy" -> if (checked) R.string.no_dairy_bangla else R.string.yes_dairy_bangla
+                "Eggs" -> if (checked) R.string.no_eggs_bangla else R.string.yes_eggs_bangla
+                "Meat" -> if (checked) R.string.no_meat_bangla else R.string.yes_meat_bangla
+                "Fish" -> if (checked) R.string.no_fish_bangla else R.string.yes_fish_bangla
+                "Gluten" -> if (checked) R.string.yes_gluten_bangla else R.string.no_gluten_bangla
+                else -> R.string.app_name // Placeholder
+            }
+        }
         else -> {
             when (title) {
                 "Vegan" -> if (checked) R.string.vegan_localized else R.string.vegetarian_localized

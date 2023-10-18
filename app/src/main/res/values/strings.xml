@@ -139,6 +139,21 @@
     <string name="no_gluten_chinese">我不能吃小麦面筋</string>
     <string name="yes_gluten_chinese">我可以吃小麦面筋</string>
 
+    <!-- bangla-->
+    <string name="app_name_bangla">আমি নিরামিষাশী</string>
+    <string name="vegan_bangla">আমি একটি নিরামিষাশী ডায়েট খাই</string>
+    <string name="vegetarian_bangla">আমি নিরামিষ ডায়েট খাই</string>
+    <string name="no_dairy_bangla">আমি কোনও দুগ্ধ খাই না</string>
+    <string name="yes_dairy_bangla">আমি দুগ্ধ খেতে পারি</string>
+    <string name="no_eggs_bangla">আমি ডিম খাই না</string>
+    <string name="yes_eggs_bangla">আমি ডিম খেতে পারি</string>
+    <string name="no_meat_bangla">আমি মাংস বা হাঁস-মুরগি খাই না</string>
+    <string name="yes_meat_bangla">আমি মাংস এবং হাঁস-মুরগি খেতে পারি</string>
+    <string name="no_fish_bangla">আমি তো মাছ খাই না</string>
+    <string name="yes_fish_bangla">আমি মাছ খেতে পারি</string>
+    <string name="no_gluten_bangla">আমি গমের গ্লুটেন খেতে পারি না</string>
+    <string name="yes_gluten_bangla">আমি গমের গ্লুটেন খেতে পারি</string>
+
 </resources>
 
 

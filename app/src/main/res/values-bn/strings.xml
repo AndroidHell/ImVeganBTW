@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">আমি নিরামিষাশী</string>
+    <string name="vegan_localized">আমি একটি নিরামিষাশী ডায়েট খাই</string>
+    <string name="vegetarian_localized">আমি নিরামিষ ডায়েট খাই</string>
+    <string name="no_dairy_localized">আমি কোনও দুগ্ধ খাই না</string>
+    <string name="yes_dairy_localized">আমি দুগ্ধ খেতে পারি</string>
+    <string name="no_eggs_localized">আমি ডিম খাই না</string>
+    <string name="yes_eggs_localized">আমি ডিম খেতে পারি</string>
+    <string name="no_meat_localized">আমি মাংস বা হাঁস-মুরগি খাই না</string>
+    <string name="yes_meat_localized">আমি মাংস এবং হাঁস-মুরগি খেতে পারি</string>
+    <string name="no_fish_localized">আমি তো মাছ খাই না</string>
+    <string name="yes_fish_localized">আমি মাছ খেতে পারি</string>
+    <string name="no_gluten_localized">আমি গমের গ্লুটেন খেতে পারি না</string>
+    <string name="yes_gluten_localized">আমি গমের গ্লুটেন খেতে পারি</string>
+    <string name="vegan_button">ভেগান</string>
+    <string name="dairy_button">দুগ্ধ</string>
+    <string name="eggs_button">ডিম</string>
+    <string name="meat_button">মাংস</string>
+    <string name="fish_button">মাছ</string>
+    <string name="gluten_button">গ্লুটেন</string>
+</resources>

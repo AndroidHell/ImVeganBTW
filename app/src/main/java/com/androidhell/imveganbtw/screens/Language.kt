@@ -61,7 +61,7 @@ fun LanguageScreen(navController: NavController, languageViewModel: LanguageView
         Spacer(modifier = Modifier.height(16.dp))
 
         RadioGroup(
-            options = listOf("English", "Spanish", "French", "German", "Italian", "Japanese", "Korean", "Chinese", "Thai"),
+            options = listOf("English", "Spanish", "French", "German", "Italian", "Japanese", "Korean", "Chinese", "Thai", "Bangla"),
             selectedOption = languageViewModel.selectedLanguageValue,
             onOptionSelected = { language ->
                 languageViewModel.setSelectedLanguage(language)
