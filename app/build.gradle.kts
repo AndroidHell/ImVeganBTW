@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "com.androidhell.imveganbtw"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.androidhell.imveganbtw"
         minSdk = 24
-        targetSdk = 33
-        versionCode = 2
-        versionName = "1.0.1"
+        targetSdk = 35
+        versionCode = 104
+        versionName = "1.0.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
